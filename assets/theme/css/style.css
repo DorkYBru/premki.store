@@ -1011,6 +1011,11 @@ blockquote {
     color: black;
   }
   
+  .black:hover {
+    color: black;
+  }
+  
+
   .slideInDown {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
@@ -1071,3 +1076,73 @@ blockquote {
       animation: anim 6s;
     }
     
+    .absolute{
+      position: absolute;
+    }
+
+    hr {
+      border:none;
+      height: 20px;
+       width: 90%;
+      height: 50px;
+      margin-top: 0;
+      border-bottom: 1px solid #1f1209;
+      box-shadow: 0 20px 20px -20px #333;
+      margin: -50px auto 10px; 
+    }
+    
+    .relative{
+      position: relative;
+    }
+
+
+    .aah{
+      color: black;
+      font-size: 96px;
+      text-align: center;
+      height: 100vh;
+      line-height: 80vh;
+      text-shadow: 0 0 100px #000;
+      animation: aah 5s ease-in-out ;
+  }
+
+  @keyframes aah{
+    0% {color: transparent;} 
+    100% {color: black;}
+
+  }
+
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
+  
+
+
+   
