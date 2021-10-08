@@ -979,12 +979,26 @@ blockquote {
 }
  .bttn{
   
-  background: linear-gradient(90deg, #9638ee, #254dd1);
+  background: linear-gradient(90deg, #9638ee, #9638ee);
  }
   .bttn:hover{
-    transition: transform 2s, visibility 2s ease-in;
-    background: linear-gradient(90deg, #254dd1, #9638ee);
+    background: linear-gradient(90deg, #9638ee,#ee38c6 ,#254dd1 );
+    background-size: 400% 400%;
+    animation: gradient 9s ease infinite;
   }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
  .white{
     color: rgb(255, 255, 255);
@@ -992,3 +1006,68 @@ blockquote {
   .white:hover{
       color: rgb(255, 255, 255);
   }
+
+  .black {
+    color: black;
+  }
+  
+  .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
+
+    .anim{
+      animation: anim 6s infinite;
+    }
+
+    @keyframes anim {
+      1%, 9% { content: "p"; }
+      9%, 18% { content: "pr"; }
+      27%, 27% { content: "pre"; }
+      27%, 36% { content: "prem"; }
+      36%, 45% { content: "premk"; }
+      45%, 54% { content: "premki"; }
+      54%, 63% { content: "premki."; }
+      63%, 72% { content: "premki.s"; }
+      72%, 81% { content: "premki.st"; }
+      81%, 90% { content: "premki.sto"; }
+      90%, 94.5% { content: "premki.stor"; }
+      94.5%, 99% { content: "premki.store"; }
+
+    } 
+
+    .anim {
+      --caret: currentcolor;
+    }
+    
+    .anim::before {
+      content: "";
+      animation: anim 6s infinite;
+    }
+    
