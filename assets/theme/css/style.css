@@ -1043,13 +1043,13 @@ blockquote {
     } 
 
     .anim{
-      animation: anim 6s infinite;
+      animation: anim 6s;
     }
 
     @keyframes anim {
       1%, 9% { content: "p"; }
       9%, 18% { content: "pr"; }
-      27%, 27% { content: "pre"; }
+      18%, 27% { content: "pre"; }
       27%, 36% { content: "prem"; }
       36%, 45% { content: "premk"; }
       45%, 54% { content: "premki"; }
@@ -1067,7 +1067,7 @@ blockquote {
     }
     
     .anim::before {
-      content: "";
-      animation: anim 6s infinite;
+      content: "premki.store";
+      animation: anim 6s;
     }
     
