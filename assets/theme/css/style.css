@@ -7,7 +7,7 @@ body {
   font-style: normal;
   line-height: 1.5;
   font-weight: 400;
-  color: #232323;
+  color: #000000;
   position: relative;
 }
 
@@ -954,6 +954,7 @@ blockquote {
 
 .zoom:hover{
   transform: scale(1.1);
+  box-shadow:rgba(0, 0, 0, 0.1);
 }
 
 .line::before {  
@@ -976,3 +977,11 @@ blockquote {
   z-index: -1;
   transition: transform .3s ease;
 }
+ .bttn{
+  
+  background: linear-gradient(90deg, #bf41e6, #9638ee, #254dd1);
+ }
+  .bttn:hover{
+    transition: transform 2s, visibility 2s ease-in;
+    background: linear-gradient(90deg, #254dd1, #9638ee, #bf41e6);
+  }
