@@ -979,9 +979,9 @@ blockquote {
 }
  .bttn{
   
-  background: linear-gradient(90deg, #bf41e6, #9638ee, #254dd1);
+  background: linear-gradient(90deg, #9638ee, #254dd1);
  }
   .bttn:hover{
     transition: transform 2s, visibility 2s ease-in;
-    background: linear-gradient(90deg, #254dd1, #9638ee, #bf41e6);
+    background: linear-gradient(90deg, #254dd1, #9638ee);
   }
