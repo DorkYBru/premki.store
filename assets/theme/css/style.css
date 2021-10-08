@@ -985,3 +985,10 @@ blockquote {
     transition: transform 2s, visibility 2s ease-in;
     background: linear-gradient(90deg, #254dd1, #9638ee);
   }
+  
+ .white{
+    color: rgb(255, 255, 255);
+  }
+  .white:hover{
+      color: rgb(255, 255, 255);
+  }
