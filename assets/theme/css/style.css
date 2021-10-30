@@ -1143,6 +1143,8 @@ blockquote {
     }
     } 
   
-
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
    
