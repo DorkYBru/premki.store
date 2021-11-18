@@ -1,0 +1,14 @@
+@import url('Praise/Praise-Regular.ttf');
+.Praise{
+    font-family: 'Praise';
+    color: #ffffff;
+    font-size: xx-large;
+
+}
+
+@import url('Cute_Font/CuteFont-Regular.ttf');
+.CuteFont{
+    font-family: 'Cute_Font';
+    color: #ffffff;
+
+}
